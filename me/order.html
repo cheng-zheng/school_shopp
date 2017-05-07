@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>我的订单</title>
+    
+	<link rel="stylesheet" href="../plugins/bootstrap.css" />
+	<link rel="stylesheet" href="../plugins/font-awesome.css"/>
+    <link rel="stylesheet" href="../plugins/weui.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/me.css"/>
+</head>
+
+<body ontouchstart>
+<div class="me-header-top">
+    <div><a id="historyPageGo"><span class="fa fa-chevron-left fa-lg"></span></a></div>
+    <div>我的订单</div>
+    <div></div>
+</div>
+<div class="height-2rem"></div>
+ <!--**********   个人 *************-->
+<div class="me-order-top">
+    <div class="order-item">
+        <a class="active">全部</a>
+    </div>
+    <div class="order-item">
+        <a class="">代付款</a>
+    </div>
+    <div class="order-item">
+        <a class="">代发货</a>
+    </div>
+    <div class="order-item">
+        <a class="">待收货</a>
+    </div>
+    <div class="order-item">
+        <a class="">已完成</a>
+    </div>
+</div>
+
+<!--全部订单-->
+<!--****************   商品列表 ********************-->
+<div class="container order-list" id="shoppingList">
+    
+    <div class="order-item">
+        <div class="order-head">
+            水果店 <i class="fa fa-angle-right"></i>
+            <span class="success">交易成功</span>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../img/cao.png" class="img-responsive"/>
+            </div>
+            <div class="col-xs-7">
+                <p>商品名称测试测试测试测试从测试测试测试测试菜市场测试测试测试</p>
+                <small>简介商品名称测试测试测试测试从测试测试测试测试菜市场测试测试测试商品名称测试测试测试测试菜市场测试测试测试</small>
+            </div>
+            <div class="col-xs-2">
+                <div class="RMBnum"><i class="fa fa-rmb"></i><span>9.9</span><br>x<tt>2</tt></div>
+            </div>
+        </div>
+        <div class="order-bottom">
+            <div class="">日期:2017-5-5-</div><hr/>
+            <div class="price">共1件商品 合计:￥99.99</div><hr/>
+            <span class="p3">&nbsp;</span>
+            <div class="del">
+                <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default">删除订单</a>
+                <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default">再次购买</a>
+            </div>
+        </div>
+    </div>
+    <div class="order-item">
+        <div class="order-head">
+            水果店 <i class="fa fa-angle-right"></i>
+            <span class="success">交易成功</span>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="../img/cao.png" class="img-responsive"/>
+            </div>
+            <div class="col-xs-7">
+                <p>商品名称测试测试测试测试从测试测试测试测试菜市场测试测试测试</p>
+                <small>简介商品名称测试测试测试测试从测试测试测试测试菜市场测试测试测试商品名称测试测试测试测试菜市场测试测试测试</small>
+            </div>
+            <div class="col-xs-2">
+                <div class="RMBnum"><i class="fa fa-rmb"></i><span>9.9</span><br>x<tt>2</tt></div>
+            </div>
+        </div>
+        <div class="order-bottom">
+            <div class="">日期:2017年5月5日 00:00</div><hr/>
+            <div class="price">共1件商品 合计:￥99.99</div><hr/>
+            <span class="p3">&nbsp;</span>
+            <div class="del">
+                <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default">删除订单</a>
+                <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_default">再次购买</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 是否删除订单 -->
+<div id="dialogs">
+    <div class="js_dialog" id="iosDialog1" style="display: none">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__hd"><strong class="weui-dialog__title">您确定要删除吗</strong></div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:;" class="weui-dialog__btn  weui-cell_warn">确定删除</a>
+                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">点错了</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../plugins/jquery.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/address.js"></script>
+</body>
+</html>
+
+
+
+

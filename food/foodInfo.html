@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>食物详情</title>
+    
+    <link rel="stylesheet" href="../plugins/bootstrap.css" />
+    <link rel="stylesheet" href="../plugins/font-awesome.css"/>
+    <link rel="stylesheet" href="../plugins/weui.css"/>
+    <link rel="stylesheet" href="../iconfont/iconfont.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/food_info.css"/>
+</head>
+<body ontouchstart>
+<!--**************** 顶部 ********************-->
+<div class="me-header-top me-header-food-info">
+    <div><a id="historyPageGo"><span class="fa fa-chevron-left "></span></a></div>
+    <div></div>
+    <div><a href="../shoppCar.html"><span class="fa fa-cart-plus "></span></a></div>
+</div>
+<!--**************** 详情 ********************-->
+<div class="goods-info-img">
+    <img class="img-responsive" src="../img/cao.png" />
+</div>
+<div class="goods-info-img-empty" id="showAndroidActionSheet"></div>
+<div class="goods-info">
+    <div class="goods-list goods-info-name"><p>炫龙 炫锋A3S 笔记本电脑酷睿i3处理器游戏本</p></div>
+    <div class="goods-list goods-info-price">
+        <span class="price-decimal-point"><i class="fa fa-rmb"></i>1999 </span><del> <i class="fa fa-rmb"></i>2099</del>
+        <small><i class="fa fa-line-chart"></i> 销量：1000</small>
+    </div>
+    <div class="goods-list weui-cell">
+                <div class="weui-cell__hd">
+                </div>
+                <div class="weui-cell__bd">
+                    <p>起送价 ￥0.00</p>
+                </div>
+                <div class="weui-cell__ft">..</div>
+    </div> 
+    <div class="goods-list goods-info-txt">
+        <h4>商品详情</h4>
+        图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情 <img data-img="../img/cao.png" src=""/>图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情图文详情
+       
+    </div>
+</div>
+<body>
+<!--点击图片查看大图-->
+<div class="page actionsheet">
+    <div class="weui-skin_android" id="androidActionsheet" style="display:none">
+        <div class="weui-mask"></div>
+        <div class="weui-actionsheet">
+            <img class="img-responsive" src="../img/mala.jpg" />
+            <span class="fa fa-times-circle-o fa-2x" id="outImg"></span>
+        </div>
+    </div>
+</div>
+<!--**************** 加入购物车 立即购买 ********************-->
+<div calss="container" id="mai">
+    <div class="row">
+        <div class="col-xs-4"> 
+            <a class="weui-btn weui-btn_warn" ><i class="fa fa-star"></i> 加入收藏</a>
+        </div>
+        <div class="col-xs-4"> 
+            <a class="weui-btn weui-btn_warn showIOSActionSheet" ></i> 加入购物车</a>
+        </div>
+        <div class="col-xs-4 off-show" ><!--添加name='off'显示已下架-->
+            <a class="weui-btn weui-btn_warn showIOSActionSheet"  >立即购买</a>
+        </div>
+    </div>
+</div>
+<!--*************** 弹出菜单 ********************-->
+<div class="weui-mask" id="iosMask" style="display:none"><!--灰色--></div>
+<div class="weui-actionsheet me-out-nav" id="actionsheet">
+    <div class="me-actionsheet-title">
+        <img class="img-rounded img-thumbnail" src="img/01.jpg" />
+        <div class="me-right">
+            <span id="iosActionsheetCancel" class="fa fa-times-circle-o fa-lg"></span>
+            <p class="price"><i class="fa fa-rmb"></i> <span> 9.9</span></p>
+            <p class="class-ok">
+            已选:<span class="attr-target"></span>
+            </p>
+        </div>
+    </div>
+    <div class="me-actionsheet-body">
+        <p >颜色</p>
+        <p class="attr">
+            <label for="r0"><input class="attr-value" type="radio" name="radio1" id="r0" checked="checked"/><span>套餐一</span></label>
+            <label for="r1"><input class="attr-value" type="radio" name="radio1" id="r1"/><span>蓝色</span></label>
+            <label for="r2"><input class="attr-value" type="radio" name="radio1" id="r2"/><span>紫色</span></label>
+            <label for="r3"><input class="attr-value" type="radio" name="radio1" id="r3"/><span>白色</span></label>
+        </p>
+        <p>尺码</p>
+        <p class="attr">
+            <label for="b0"><input class="attr-value" type="radio" name="radio2" id="b0" checked="checked"/><span>S</span></label>
+            <label for="b1"><input class="attr-value" type="radio" name="radio2" id="b1"/><span>m</span></label>
+            <label for="b2"><input class="attr-value" type="radio" name="radio2" id="b2"/><span>xl</span></label>
+            <label for="b3"><input class="attr-value" type="radio" name="radio2" id="b3"/><span>xxl</span></label>
+        </p>
+        <p>款型</p>
+        <p class="attr">
+            <label for="c0"><input class="attr-value" type="radio" name="radio3" id="c0" checked="checked"/><span>长袖</span></label>
+            <label for="c1"><input class="attr-value" type="radio" name="radio3" id="c1"/><span>短袖</span></label>
+        </p>
+    </div>
+    <div class="weui-actionsheet__cell buy-count">
+        <span class="pull-left">购买数量 </span>
+        <span class="pull-right">
+           <button class="min" >-</button><input type="text" value="1" readonly/><button class="add">+</button>
+        </span>
+    </div>
+
+    <div class="me-actionsheet-bottom">
+        <a href="" class="weui-btn weui-btn_warn me-ok me-back-f90">加入购物车</a>
+        <a href="" class="weui-btn weui-btn_warn me-ok">立即购买</a>
+    </div>
+</div>
+
+<script type="text/javascript" src="../plugins/jquery.js"></script>
+<script src="../plugins/img_load_echo.js"><!--图片懒加载--></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/food.js"></script>
+</html>
+
+
+
+

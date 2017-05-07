@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>校园外卖</title>
+    
+    <link rel="stylesheet" href="../plugins/bootstrap.css" />
+    <link rel="stylesheet" href="../plugins/font-awesome.css"/>
+    <link rel="stylesheet" href="../plugins/weui.css"/>
+    <link rel="stylesheet" href="../iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/food.css"/>
+</head>
+
+<body ontouchstart>
+<!--顶部-->
+<div class="me-header-top">
+    <div><a id="historyPageGo"><span class="fa fa-chevron-left fa-lg"></span></a></div>
+    <div>校园外卖</div>
+    <div></div>
+</div>
+<!--导航-->
+<div class="row food-nav">
+    <div class="col-xs-4">
+    综合排序 <span class="caret"></span>
+    </div>
+    <div class="col-xs-4">
+    销量优先 <span class="caret"></span>
+    </div>
+    <div class="col-xs-4">
+    好评优先 <span class="caret"></span>
+    </div>
+</div>
+<!--****************   商品列表 ********************-->
+<div class="height-2rem"></div>
+<div class="me-goods-List">
+    <div class="shopp-item">
+        <a class="me-on-a me-a" href="foodInfo.html">
+            <div class="off"><!--已下架-->
+                <i class="icon icon-xiajia"><!--已下架--></i>
+            </div>
+            <img class="img-responsive " src="" data-img="../img/cao.png"/>
+            <p>商品名称测试测试测试测试测试</p>
+        </a>
+        <p>
+            <span class="price-decimal-point">99.90</span>
+            <small>销量:99</small>
+            <a class=" fa fa-star" onclick="toast('加入收藏成功');"></a>
+        </p>
+    </div>
+    <div class="shopp-item">
+        <a class="me-on-a me-a" href="foodInfo.html">
+            <div class="off"><!--已下架-->
+                <i class="icon icon-xiajia"><!--已下架--></i>
+            </div>
+            <img class="img-responsive " src="" data-img="../img/cao.png"/>
+            <p>商品名称测试测试测试测试测试</p>
+        </a>
+        <p>
+            <span class="price-decimal-point">99.90</span>
+            <small>销量:99</small>
+            <a class=" fa fa-star" onclick="toast('加入收藏成功');"></a>
+        </p>
+    </div>
+    <div class="shopp-item">
+        <a class="me-on-a me-a" href="foodInfo.html">
+            <div class="off"><!--已下架-->
+                <i class="icon icon-xiajia"><!--已下架--></i>
+            </div>
+            <img class="img-responsive " src="" data-img="../img/cao.png"/>
+            <p>商品名称测试测试测试测试测试</p>
+        </a>
+        <p>
+            <span class="price-decimal-point">99.90</span>
+            <small>销量:99</small>
+            <a class=" fa fa-star" onclick="toast('加入收藏成功');"></a>
+        </p>
+    </div>
+    <div class="shopp-item">
+        <a class="me-on-a me-a" href="foodInfo.html">
+            <div class="off"><!--已下架-->
+                <i class="icon icon-xiajia"><!--已下架--></i>
+            </div>
+            <img class="img-responsive " src="" data-img="../img/cao.png"/>
+            <p>商品名称测试测试测试测试测试</p>
+        </a>
+        <p>
+            <span class="price-decimal-point">99.90</span>
+            <small>销量:99</small>
+            <a class=" fa fa-star" onclick="toast('加入收藏成功');"></a>
+        </p>
+    </div>
+    <div class="shopp-item">
+        <a class="me-on-a me-a" href="foodInfo.html">
+            <div class="off"><!--已下架-->
+                <i class="icon icon-xiajia"><!--已下架--></i>
+            </div>
+            <img class="img-responsive " src="" data-img="../img/cao.png"/>
+            <p>商品名称测试测试测试测试测试</p>
+        </a>
+        <p>
+            <span class="price-decimal-point">99.90</span>
+            <small>销量:99</small>
+            <a class=" fa fa-star" onclick="toast('加入收藏成功');"></a>
+        </p>
+    </div>
+
+</div>
+<!--分页按钮-->
+<div class="page">
+    <a href="javascript:;" class="weui-btn weui-btn_default">上一页</a>
+    <a href="javascript:;" class="weui-btn weui-btn_default">下一页</a>
+</div>
+<!--********** 弹出菜单 **************-->
+<div class="weui-mask" id="iosMask" style="display: none"><!--灰色--></div>
+<div class="weui-actionsheet" id="actionsheet">
+    <div class="me-actionsheet-title">
+        <img class="img-rounded img-thumbnail" src="img/01.jpg" />
+        <div class="me-right">
+            <span id="iosActionsheetCancel" class="fa fa-times-circle-o fa-lg"></span>
+            <p>￥99</p>
+            <p>已选：测试测试测试测试从测试测试测试测试</p>
+        </div>
+    </div>
+    <div class="me-actionsheet-body">
+        <p>套餐类型</p>
+        <p>
+            <label for="r0"><input type="radio" name="radio1" id="r0" checked="checked"/><span>套餐一</span></label>
+            <label for="r1"><input type="radio" name="radio1" id="r1"/><span>套餐二</span></label>
+            <label for="r2"><input type="radio" name="radio1" id="r2"/><span>套餐三</span></label>
+            <label for="r3"><input type="radio" name="radio1" id="r3"/><span>标配</span></label>
+        </p>
+        <p>其他分类</p>
+        <p>
+            <label for="b0"><input type="radio" name="radio2" id="b0" checked="checked"/><span>测试试测试</span></label>
+            <label for="b1"><input type="radio" name="radio2" id="b1"/><span>测试测试测试测试</span></label>
+            <label for="b2"><input type="radio" name="radio2" id="b2"/><span>测试测试测试测试</span></label>
+            <label for="b3"><input type="radio" name="radio2" id="b3"/><span>测试测试测试</span></label>
+        </p>
+    </div>
+    <div class="weui-actionsheet__cell">
+        购买数量<button class="min">-</button><input type="text" style="" value="1" readonly/><button class="add">+</button>
+    </div>
+    <a href="" class="weui-btn weui-btn_warn me-ok">确定</a>
+</div>
+
+<script type="text/javascript" src="../plugins/jquery.js"></script>
+<script type="text/javascript" src="../plugins/img_load_echo.js"><!--图片懒加载--></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</body>
+</html>
+
+
+
+

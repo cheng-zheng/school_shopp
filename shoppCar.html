@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>购物车</title>
+    
+    <link rel="stylesheet" href="plugins/bootstrap.css" />
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <link rel="stylesheet" href="plugins/weui.css"/>
+    <link rel="stylesheet" href="plugins/font-awesome.css"/>
+    <!-- 以上是框架 -->
+    <!-- 以下自定义css & js -->
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/shopping_car.css"/>
+</head>
+<body ontouchstart>
+<!--顶部-->
+<style type="text/css">
+</style>
+<div class="me-header-top">
+    <div><a id="historyPageGo"><span class="fa fa-chevron-left fa-lg"></span></a></div>
+    <div>购物车</div>
+    <div><a id="me_edit">编辑全部</a></div>
+</div>
+<!--****************   购物车列表.2.0 ********************-->
+<div class="height-2rem"></div>
+<div class="container shopping-hoem" id="shoppingList" >
+    <div class="row" >
+        <div class="col-xs-1 off-sale" >
+            <label for='s1' class="me-checkbox-icon">
+                <input id="s1" type="checkbox" name="select" value="1" />
+                <i class="weui-icon-success"></i>
+            </label>
+        </div>
+        <div class="col-xs-3">
+            <img src="food/img/01.jpg" class="img-responsive"/>
+        </div>
+        <div class="col-xs-6">
+            <p>商品名称测试测试测</p>
+            <small>已选套餐:测试测测试测测试测试测试测试</small>
+        </div>
+        <div class="col-xs-2">
+            <div class="RMBnum"><i class="fa fa-rmb"></i><span>9.9</span><br>x<tt>2</tt></div>
+        </div>
+        <div class="me-edit">
+                <button class="edit-min">-</button><input type="text" value="1" readonly="readonly" /><button class="edit-add">+</button>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-xs-1" name="off">
+            <label for='s2' class="me-checkbox-icon">
+                <input id="s2" type="checkbox" name="select" value="1" />
+                <i class="weui-icon-success"></i>
+            </label>
+        </div>
+        <div class="col-xs-3">
+            <img src="food/img/01.jpg" class="img-responsive"/>
+        </div>
+        <div class="col-xs-6">
+            <p>商品名称</p>
+            <small>已选套餐:测试测试测试测试</small>
+        </div>
+        <div class="col-xs-2">
+            <div class="RMBnum"><i class="fa fa-rmb"></i><span>9.9</span><br>x<tt>2</tt></div>
+        </div>
+        <div class="me-edit">
+                <button class="edit-min">-</button><input type="text" value="1" readonly="readonly" /><button class="edit-add">+</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1 off-sale">
+            <label for='s3' class="me-checkbox-icon">
+                <input id="s3" type="checkbox" name="select" value="1" />
+                <i class="weui-icon-success"></i>
+            </label>
+        </div>
+        <div class="col-xs-3">
+            <img src="food/img/01.jpg" class="img-responsive"/>
+        </div>
+        <div class="col-xs-6">
+            <p>商品名称</p>
+            <small>已选套餐:测试测试测试测试</small>
+        </div>
+        <div class="col-xs-2">
+            <div class="RMBnum"><i class="fa fa-rmb"></i><span>9.9</span><br>x<tt>2</tt></div>
+        </div>
+        <div class="me-edit">
+                <button class="edit-min">-</button><input type="text" value="1" readonly="readonly" /><button class="edit-add">+</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-1">
+            <label for='s4' class="me-checkbox-icon">
+                <input id="s4" type="checkbox" name="select" value="1" />
+                <i class="weui-icon-success"></i>
+            </label>
+        </div>
+        <div class="col-xs-3">
+            <img src="food/img/01.jpg" class="img-responsive"/>
+        </div>
+        <div class="col-xs-6">
+            <p>商品名称</p>
+            <small>已选套餐:测试测试测试测试</small>
+        </div>
+        <div class="col-xs-2">
+            <div class="RMBnum"><i class="fa fa-rmb"></i><span>9.9</span><br>x<tt>2</tt></div>
+        </div>
+        <div class="me-edit">
+                <button class="edit-min">-</button><input type="text" value="1" readonly="readonly" /><button class="edit-add">+</button>
+        </div>
+    </div>
+</div>
+<div class="center-block">
+    <span class="fa fa-shopping-cart fa-4x"></span>
+    <h3>您的购物车还是空的</h3>
+    <p>去挑一些中意的商品吧</p>
+    <a href="javascript:;" class="weui-btn weui-btn_primary">去商店逛逛</a>
+</div>
+<!--****************  结算  ********************-->
+<div calss="container" id="bill">
+    <div class="row ">
+        <div class="col-xs-4">
+            <label for='all' class="me-checkbox-icon">
+                <input id="all" type="checkbox" name="selectAll"  />
+                <i class="weui-icon-success"></i>
+            </label><b>全选</b>
+        </div>
+        <div class="col-xs-4">
+            <span>合计: <i class="fa fa-rmb"></i><tt>0.00</tt></span>
+        </div>
+        <div class="col-xs-4" name="num">
+            <a id="sub" class="weui-btn weui-btn_warn" href="shoppCar/settlement.html" >结算(<span>0</span>)
+            </a>
+        </div>
+        <div class="col-xs-4" > 
+            <a class="weui-btn weui-btn_warn" style="">加入收藏夹</a>
+        </div>
+        <div class="col-xs-4" >
+            <a class="weui-btn weui-btn_warn showIOSDialog1" name="deleteAll"  >删除</a>
+        </div>
+    </div>
+</div>
+<!--是否删除购物车商品-->
+<div id="dialogs">
+    <div class="js_dialog" id="iosDialog1">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__hd"><strong class="weui-dialog__title">您确定要删除吗</strong></div>
+            <div class="weui-dialog__ft">
+                <a  id="okDelete" class="weui-dialog__btn weui-cell_warn me-font-f90">确定删除</a>
+                <a  class="weui-dialog__btn weui-dialog__btn_primary">点错了</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+/*function weConfirm(msg){
+    msg = msg || '确定吗';
+    var html = '<div id="dialogs">\
+        <div class="js_dialog" id="iosDialog1" style="display: ">\
+            <div class="weui-mask"></div>\
+            <div class="weui-dialog">\
+                <div class="weui-dialog__hd"><strong class="weui-dialog__title">'+msg+'</strong></div>\
+                <div class="weui-dialog__ft">\
+                    <a  id="okDelete" class="weui-dialog__btn weui-cell_warn me-font-f90">确定删除</a>\
+                    <a  class="weui-dialog__btn weui-dialog__btn_primary">点错了</a>\
+                </div>\
+            </div>\
+        </div>\
+    </div>';
+    if(!$('#dialogs').length){
+        $('.weui-tabbar').after(html);
+    }
+    $('#iosDialog1').fadeIn(200);
+    //点按钮关闭
+    $('#dialogs').on('click', '.weui-dialog__btn', function(){
+        $(this).parents('.js_dialog').fadeOut(200);//关闭
+    });
+}*/
+//点击显示
+    // $('.showIOSDialog1').on('click', function(){
+    //     console.log($(this));
+    //     $('#iosDialog1').fadeIn(200);
+    // });
+    // $('#dialogs').on('click', '.weui-dialog__btn', function(){
+    //     $(this).parents('.js_dialog').fadeOut(200);//关闭
+    // });
+    
+</script>
+<!--****************  底部导航 ********************-->
+<div class="weui-tabbar">
+    <a class="weui-tabbar__item" href="home.html">
+        <i class="weui-tabbar__icon"><span class="fa fa-home"></span></i>
+        <p class="weui-tabbar__label">首页</p>
+    </a>
+    <a class="weui-tabbar__item">
+        <i class="weui-tabbar__icon"><span class="fa fa-shopping-cart me-font-f90"></span></i>
+        <p class="weui-tabbar__label me-font-f90">购物车</p>
+    </a>
+    <a class="weui-tabbar__item"  name="wait">
+        <i class="weui-tabbar__icon"><span class="fa fa-comments-o"></span></i>
+        <p class="weui-tabbar__label">校园圈子</p>
+    </a>
+    <a class="weui-tabbar__item" href="me.html">
+        <i class=" weui-tabbar__icon"><span class="fa fa-user-o"></span></i>
+        <p class="weui-tabbar__label">个人中心</p>
+    </a>
+</div>
+<script type="text/javascript" src="plugins/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/shopping_car.js"></script>
+</body>
+</html>
+
+
+
+

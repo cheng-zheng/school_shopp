@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>我的收货地址</title>
+	
+	<link rel="stylesheet" href="../plugins/bootstrap.css"/>
+    <link rel="stylesheet" href="../plugins/font-awesome.css"/>
+	<link rel="stylesheet" href="../plugins/weui.css"/>
+    <link rel="stylesheet" href="../iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/address.css"/>
+
+</head>
+
+<body ontouchstart>
+<!--顶部-->
+<div class="me-header-top">
+    <div><a id="historyPageGo"><span class="fa fa-chevron-left fa-lg"></span></a></div>
+    <div>我的收货地址</div>
+    <div></div>
+</div>
+<!--收货地址-->
+<div class="height-2rem"></div>
+<div class="container me-address">
+    <div class="row address">
+        <i class="icon icon-moren"><!--默认地址图标--></i>
+        <div class="col-xs-1 me-a showIOSDialog1">
+            <i class="fa fa-times-circle-o fa-lg"></i>
+        </div>
+        <div class="col-xs-10 " >
+            <p>收货人:<b>橙政</b> 先生 <tt>15018097614</tt></p>
+            <p>惠州市技师学院,弘毅园,明志楼,601</p>
+        </div>
+        <div class="col-xs-1 me-a" name="addressGo">
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
+</div>
+<div class="container me-address">
+    <div class="row address">
+        <div class="col-xs-1 me-a showIOSDialog1">
+            <i class="fa fa-times-circle-o fa-lg"></i>
+        </div>
+        <div class="col-xs-10 " >
+            <p>收货人:<b>橙政</b> 先生 <tt>15018097614</tt></p>
+            <p>惠州市技师学院,弘毅园,明志楼,601</p>
+        </div>
+        <div class="col-xs-1 me-a"  name="addressGo">
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
+</div>
+<!--是否删除收货地址-->
+<div id="dialogs">
+	<div class="js_dialog" id="iosDialog1" style="display: none">
+	    <div class="weui-mask"></div>
+	    <div class="weui-dialog">
+	        <div class="weui-dialog__hd"><strong class="weui-dialog__title">您确定要删除吗</strong></div>
+	        <div class="weui-dialog__ft">
+	            <a href="javascript:;" class="weui-dialog__btn  weui-cell_warn">确定删除</a>
+	            <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">点错了</a>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+<a class="weui-btn weui-btn_primary new-address"  href="address.html">新增收货地址</a>
+
+<script type="text/javascript" src="../plugins/jquery.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/address.js"></script>
+</body>
+</html>
+
+
+
+

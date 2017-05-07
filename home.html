@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<title>home</title>
+
+	<link rel="stylesheet" href="plugins/bootstrap.css" />
+    <link rel="stylesheet" href="plugins/font-awesome.css"/>
+    <link rel="stylesheet" href="iconfont/iconfont.css"/>
+    <link rel="stylesheet" href="plugins/weui.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+
+    <!-- 以下自定义css & js -->
+    <link rel="stylesheet" href="plugins/swiper.css"/> <!--首页滑动-->
+    <link rel="stylesheet" href="css/home.css"/>
+	
+</head>
+<body ontouchstart>
+<!--**************** 搜索 ********************-->
+<div class="weui-search-bar" id="searchBar">
+    <form class="weui-search-bar__form">
+        <div class="weui-search-bar__box">
+            <i class="weui-icon-search"></i>
+            <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+            <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+        </div>
+        <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+            <i class="weui-icon-search"></i>
+            <span>搜索</span>
+        </label>
+    </form>
+    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+</div>
+<div class="weui-cells searchbar-result" id="searchResult" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__bd weui-cell_primary">
+            <p>实时搜索文本</p>
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__bd weui-cell_primary">
+            <p>实时搜索文本</p>
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__bd weui-cell_primary">
+            <p>实时搜索文本</p>
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__bd weui-cell_primary">
+            <p>实时搜索文本</p>
+        </div>
+    </div>
+</div>
+
+    </script>
+<!--**************** 轮播 ********************-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="img-responsive" src="img/school.png" /></div>
+        <div class="swiper-slide"><img class="img-responsive" src="img/mala.jpg" /></div>
+        <div class="swiper-slide"><img class="img-responsive" src="img/school.png" /></div>
+        <div class="swiper-slide"><img class="img-responsive" src="img/school.png" /></div>
+        <div class="swiper-slide"><img class="img-responsive" src="img/school.png" /></div>
+    </div>
+    <div class="swiper-pagination"><!-- 分页器 --></div>
+</div>
+<style id="frames"></style>
+<div class="font-move">
+    <span>公告:测试 测试 测试 测试测试测试测试</span>
+</div>
+<!--**************** 九宫格 ********************-->
+<div class="weui-grids" >
+    <a href="food/food.html" class="weui-grid">
+        <div class="weui-grid__icon">
+            <img src="img/food.png" >
+        </div>
+        <p class="weui-grid__label">校园外卖</p>
+    </a>
+    <a href="#" class="weui-grid">
+        <div class="weui-grid__icon">
+            <img src="img/shop.png" >
+        </div>
+        <p class="weui-grid__label">校园商城</p>
+    </a>
+    <a href="#" class="weui-grid">
+        <div class="weui-grid__icon">
+            <img src="img/car.png" >
+        </div>
+        <p class="weui-grid__label">车宝通</p>
+    </a>
+    <a href="food/food.html" class="weui-grid">
+        <div class="weui-grid__icon">
+            <img src="img/Fruits.png" >
+        </div>
+        <p class="weui-grid__label">水果商城</p>
+    </a>
+    <a href="#" class="weui-grid" >
+        <div class="weui-grid__icon">
+            <img src="img/chat.png" >
+        </div>
+        <p class="weui-grid__label">校园圈子</p>
+    </a>
+    <a href="#" class="weui-grid">
+        <div class="weui-grid__icon">
+            <img src="img/horn.png" >
+        </div>
+        <p class="weui-grid__label">校内通</p>
+    </a>
+</div>
+<!-- 商品列表-->
+<div class="weui-cell me-font-f90">
+    <div class="weui-cell__hd"><span class="fa fa-heart"></span>
+    </div>
+    <div class="weui-cell__bd">
+        <p>&nbsp;精品推荐</p>
+    </div>
+    <div class="weui-cell__ft"></div>
+</div>
+</style>
+<div class="me-goods-List">
+    <div class="shopp-item" >
+        <a class="me-on-a me-a"  href="food/foodInfo.html">
+        <!--添加name='off'出现下架-->
+            <img class="img-responsive off-sale"  data-img="img/cao.png"/>
+            <p>商品名称测试测试测</p>
+        </a>
+        <p>
+            <span class="price-decimal-point">10.00</span>
+            <small>销量:99</small>
+            <a class=" fa fa-star" onclick="toast('加入收藏成功');"></a>
+        </p>
+    </div>
+    <div class="shopp-item">
+        <a class="me-on-a me-a" href="food/foodInfo.html">
+            <img class="img-responsive " src="" data-img="img/cao.png"/>
+            <p>商品名称测试测试测</p>
+        </a>
+        <p>
+            <span class="price-decimal-point">10.00</span>
+            <small>销量:99</small>
+            <a class=" fa fa-star" onclick="toast('加入收藏成功');"></a>
+        </p>
+    </div>
+    <div class="shopp-item">
+        <a class="me-on-a me-a" href="food/foodInfo.html">
+            <img class="img-responsive " src="" data-img="img/cao.png"/>
+            <p>商品名称测试测试测</p>
+        </a>
+        <p>
+            <span class="price-decimal-point">10.00</span>
+            <small>销量:99</small>
+            <a class="fa fa-star" onclick="toast('加入收藏成功');"></a>
+        </p>
+    </div>
+    <div class="shopp-item">
+        <a class="me-on-a me-a" href="food/foodInfo.html">
+            <img class="img-responsive " src="" data-img="img/cao.png"/>
+            <p>商品名称测试测试测</p>
+        </a>
+        <p>
+            <span class="price-decimal-point">10.00</span>
+            <small>销量:99</small>
+            <a class=" fa fa-star" onclick="toast('加入收藏成功');"></a>
+        </p>
+    </div>
+</div>
+<div class="height-2rem"></div>
+<!--**********   底部导航  **************-->
+<div class="weui-tabbar">
+	<a class="weui-tabbar__item">
+        <i class="weui-tabbar__icon"><span class="fa fa-home"></span></i>
+		<p class="weui-tabbar__label">首页</p>
+	</a>
+    <a class="weui-tabbar__item" href="shoppCar.html">
+        <i class="weui-tabbar__icon"><span class="fa fa-shopping-cart"></span></i>
+        <p class="weui-tabbar__label">购物车</p>
+    </a>
+	<a class="weui-tabbar__item" name="wait">
+        <i class="weui-tabbar__icon"><span class="fa fa-comments-o"></span></i>
+		<p class="weui-tabbar__label">校园圈子</p>
+	</a>
+	<a class="weui-tabbar__item" href="me.html">
+        <i class=" weui-tabbar__icon"><span class="fa fa-user-o"></span></i>
+		<p class="weui-tabbar__label">个人中心</p>
+	</a>
+</div>
+<script src="plugins/jquery.js"></script>
+<script src="plugins/swiper.jquery.js">/*这是轮播框架*/</script>
+<script src="plugins/img_load_echo.js"><!--图片懒加载--></script>
+
+<script src="js/common.js"></script>
+<script src="js/home.js">/**/</script>
+
+</body>
+</html>
+
+
+
+
